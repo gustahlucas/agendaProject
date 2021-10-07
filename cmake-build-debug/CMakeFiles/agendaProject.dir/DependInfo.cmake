@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.cpp" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/agendaProject.dir/agenda.cpp.o"
-  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/main.cpp" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/agendaProject.dir/main.cpp.o"
+  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.cpp" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/agendaProject.dir/sources/agenda.cpp.o"
+  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/standalone/main.cpp" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/agendaProject.dir/standalone/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

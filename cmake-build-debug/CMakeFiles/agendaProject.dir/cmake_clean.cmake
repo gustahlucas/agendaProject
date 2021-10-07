@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/agendaProject.dir/agenda.cpp.o"
-  "CMakeFiles/agendaProject.dir/main.cpp.o"
+  "CMakeFiles/agendaProject.dir/sources/agenda.cpp.o"
+  "CMakeFiles/agendaProject.dir/standalone/main.cpp.o"
   "agendaProject"
   "agendaProject.pdb"
 )

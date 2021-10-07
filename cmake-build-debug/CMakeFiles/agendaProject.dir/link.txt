@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/agendaProject.dir/main.cpp.o CMakeFiles/agendaProject.dir/agenda.cpp.o -o agendaProject 
+/usr/bin/c++ -g CMakeFiles/agendaProject.dir/standalone/main.cpp.o CMakeFiles/agendaProject.dir/sources/agenda.cpp.o -o agendaProject 

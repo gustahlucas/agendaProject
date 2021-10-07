@@ -31,6 +31,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
+  "../sources/CMakeLists.txt"
+  "../standalone/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -42,9 +44,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sources/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "standalone/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/agendaProject.dir/DependInfo.cmake"
+  "sources/CMakeFiles/agenda.dir/DependInfo.cmake"
+  "standalone/CMakeFiles/agendaProject.dir/DependInfo.cmake"
   )

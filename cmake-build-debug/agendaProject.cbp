@@ -5,23 +5,13 @@
 		<Option title="agendaProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\sources\;CMake Files\standalone\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,13 +27,24 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="agendaProject">
-				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/agendaProject" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agenda">
+				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/libagenda.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -53,19 +54,66 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 agendaProject"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 agenda"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agenda/fast">
+				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/libagenda.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 agenda/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agendaProject">
+				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/agendaProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 agendaProject"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="agendaProject/fast">
-				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/agendaProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug"/>
+				<Option output="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/agendaProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -75,24 +123,30 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 agendaProject/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 agendaProject/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gustavo/Área\ de\ Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.cpp">
-			<Option target="agendaProject"/>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.cpp">
+			<Option target="agenda"/>
 		</Unit>
-		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.h">
-			<Option target="agendaProject"/>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.h">
+			<Option target="agenda"/>
 		</Unit>
-		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/main.cpp">
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/standalone/main.cpp">
 			<Option target="agendaProject"/>
 		</Unit>
 		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sources\"/>
+		</Unit>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/standalone/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\standalone\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
