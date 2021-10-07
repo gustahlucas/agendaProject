@@ -3,4 +3,4 @@ project(agendaProject)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(agendaProject main.cpp)
+add_executable(agendaProject main.cpp agenda.cpp agenda.h)

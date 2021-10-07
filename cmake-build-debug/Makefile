@@ -129,6 +129,30 @@ agendaProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/agendaProject.dir/build.make CMakeFiles/agendaProject.dir/build
 .PHONY : agendaProject/fast
 
+agenda.o: agenda.cpp.o
+.PHONY : agenda.o
+
+# target to build an object file
+agenda.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/agendaProject.dir/build.make CMakeFiles/agendaProject.dir/agenda.cpp.o
+.PHONY : agenda.cpp.o
+
+agenda.i: agenda.cpp.i
+.PHONY : agenda.i
+
+# target to preprocess a source file
+agenda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/agendaProject.dir/build.make CMakeFiles/agendaProject.dir/agenda.cpp.i
+.PHONY : agenda.cpp.i
+
+agenda.s: agenda.cpp.s
+.PHONY : agenda.s
+
+# target to generate assembly for a file
+agenda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/agendaProject.dir/build.make CMakeFiles/agendaProject.dir/agenda.cpp.s
+.PHONY : agenda.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... agendaProject"
+	@echo "... agenda.o"
+	@echo "... agenda.i"
+	@echo "... agenda.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/agendaProject.dir/agenda.cpp.o"
   "CMakeFiles/agendaProject.dir/main.cpp.o"
   "agendaProject"
   "agendaProject.pdb"

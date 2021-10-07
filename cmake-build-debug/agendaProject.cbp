@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.cpp">
+			<Option target="agendaProject"/>
+		</Unit>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.h">
+			<Option target="agendaProject"/>
+		</Unit>
 		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/main.cpp">
 			<Option target="agendaProject"/>
 		</Unit>
