@@ -81,7 +81,7 @@ clean: standalone/clean
 # Directory level rules for directory sources
 
 # Recursive "all" directory target.
-sources/all: sources/CMakeFiles/agenda.dir/all
+sources/all: sources/CMakeFiles/agendalib.dir/all
 .PHONY : sources/all
 
 # Recursive "preinstall" directory target.
@@ -89,7 +89,7 @@ sources/preinstall:
 .PHONY : sources/preinstall
 
 # Recursive "clean" directory target.
-sources/clean: sources/CMakeFiles/agenda.dir/clean
+sources/clean: sources/CMakeFiles/agendalib.dir/clean
 .PHONY : sources/clean
 
 #=============================================================================
@@ -108,44 +108,44 @@ standalone/clean: standalone/CMakeFiles/agendaProject.dir/clean
 .PHONY : standalone/clean
 
 #=============================================================================
-# Target rules for target sources/CMakeFiles/agenda.dir
+# Target rules for target sources/CMakeFiles/agendalib.dir
 
 # All Build rule for target.
-sources/CMakeFiles/agenda.dir/all:
-	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/depend
-	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target agenda"
-.PHONY : sources/CMakeFiles/agenda.dir/all
+sources/CMakeFiles/agendalib.dir/all:
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/depend
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=3,4,5 "Built target agendalib"
+.PHONY : sources/CMakeFiles/agendalib.dir/all
 
 # Build rule for subdir invocation for target.
-sources/CMakeFiles/agenda.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/agenda.dir/all
+sources/CMakeFiles/agendalib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/agendalib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 0
-.PHONY : sources/CMakeFiles/agenda.dir/rule
+.PHONY : sources/CMakeFiles/agendalib.dir/rule
 
 # Convenience name for target.
-agenda: sources/CMakeFiles/agenda.dir/rule
-.PHONY : agenda
+agendalib: sources/CMakeFiles/agendalib.dir/rule
+.PHONY : agendalib
 
 # clean rule for target.
-sources/CMakeFiles/agenda.dir/clean:
-	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/clean
-.PHONY : sources/CMakeFiles/agenda.dir/clean
+sources/CMakeFiles/agendalib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/clean
+.PHONY : sources/CMakeFiles/agendalib.dir/clean
 
 #=============================================================================
 # Target rules for target standalone/CMakeFiles/agendaProject.dir
 
 # All Build rule for target.
-standalone/CMakeFiles/agendaProject.dir/all: sources/CMakeFiles/agenda.dir/all
+standalone/CMakeFiles/agendaProject.dir/all: sources/CMakeFiles/agendalib.dir/all
 	$(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target agendaProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target agendaProject"
 .PHONY : standalone/CMakeFiles/agendaProject.dir/all
 
 # Build rule for subdir invocation for target.
 standalone/CMakeFiles/agendaProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/CMakeFiles/agendaProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 0
 .PHONY : standalone/CMakeFiles/agendaProject.dir/rule

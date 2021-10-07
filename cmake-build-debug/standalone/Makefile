@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/c
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/gustavo/Downloads/CLion-2021.2.2/clion-2021.2.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -85,16 +75,26 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/gustavo/Downloads/CLion-2021.2.2/clion-2021.2.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone//CMakeFiles/progress.marks"
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named agendalib
+# Convenience name for target.
+standalone/CMakeFiles/agendaProject.dir/rule:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 standalone/CMakeFiles/agendaProject.dir/rule
+.PHONY : standalone/CMakeFiles/agendaProject.dir/rule
 
-# Build rule for target.
-agendalib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agendalib
-.PHONY : agendalib
-
-# fast build rule for target.
-agendalib/fast:
-	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/build
-.PHONY : agendalib/fast
-
-#=============================================================================
-# Target rules for targets named agendaProject
-
-# Build rule for target.
-agendaProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agendaProject
+# Convenience name for target.
+agendaProject: standalone/CMakeFiles/agendaProject.dir/rule
 .PHONY : agendaProject
 
 # fast build rule for target.
 agendaProject/fast:
-	$(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/build
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/build
 .PHONY : agendaProject/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f standalone/CMakeFiles/agendaProject.dir/build.make standalone/CMakeFiles/agendaProject.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... agendaProject"
-	@echo "... agendalib"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

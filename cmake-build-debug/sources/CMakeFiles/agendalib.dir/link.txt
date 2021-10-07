@@ -1,0 +1,2 @@
+/usr/bin/ar qc libagendalib.a CMakeFiles/agendalib.dir/agenda/agenda.cpp.o CMakeFiles/agendalib.dir/__/tests/unit_tests/ut_agenda.cpp.o
+/usr/bin/ranlib libagendalib.a

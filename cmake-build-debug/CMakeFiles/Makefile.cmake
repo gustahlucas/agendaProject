@@ -50,6 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "sources/CMakeFiles/agenda.dir/DependInfo.cmake"
+  "sources/CMakeFiles/agendalib.dir/DependInfo.cmake"
   "standalone/CMakeFiles/agendaProject.dir/DependInfo.cmake"
   )

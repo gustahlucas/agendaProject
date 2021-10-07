@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.h
+string
+-
+vector
+-
+ctime
+-
+
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/main.cpp
+iostream
+-
+agenda.h
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/agenda.h
+

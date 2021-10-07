@@ -1,5 +1,5 @@
 #include <iostream>
-#include "agenda.h"
+#include <agenda/agenda.h>
 
 std::vector<struct itemAgenda> listaItensAgenda;
 
