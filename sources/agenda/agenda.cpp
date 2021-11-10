@@ -46,8 +46,17 @@ void addItemAgenda (vector<struct itemAgenda> &lista){
     lista.push_back(newItem);
 }
 void exibeItensAgenda(vector<struct itemAgenda> &lista){
-    for (struct itemAgenda i: lista){
-        cout << i.dia << " - " << i.mes << " - " << i.ano << " - " << i.descricao << endl;
+    if (!lista.empty()) {
+        cout << "Compromisso: " << endl;
+        int cont = 1;
+        for (struct itemAgenda i: lista) {
+            cout << cont << endl;
+            cout << " " << i.dia << " - " << i.mes
+                 << " - " << i.ano << " - " << i.descricao << endl;
+            cont++;
+        }
+    }else {
+        cout << "Nenhum compromisso encontrado ou cadastrado " << endl;
     }
 }
 

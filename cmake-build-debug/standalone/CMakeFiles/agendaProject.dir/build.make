@@ -88,7 +88,7 @@ agendaProject_EXTERNAL_OBJECTS =
 
 standalone/agendaProject: standalone/CMakeFiles/agendaProject.dir/main.cpp.o
 standalone/agendaProject: standalone/CMakeFiles/agendaProject.dir/build.make
-standalone/agendaProject: sources/libagendalib.a
+standalone/agendaProject: sources/libagenda.a
 standalone/agendaProject: standalone/CMakeFiles/agendaProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable agendaProject"
 	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agendaProject.dir/link.txt --verbose=$(VERBOSE)

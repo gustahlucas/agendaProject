@@ -14,6 +14,7 @@ int main() {
                 addItemAgenda(listaItensAgenda);
                 break;
             case EXIBIR_COMPROMISSO:
+                std::cout<< "Seu compromissos são: " << std::endl;
                 exibeItensAgenda(listaItensAgenda);
                 break;
             case VER_COMPROMISSO_DO_DIA:
@@ -21,6 +22,8 @@ int main() {
                 exibeItensAgenda(compromissoHoje);
                 break;
             case SAIR:
+
+                std::cout << " Encerrando o programa" << std::endl;
                 //Retorna ao sistema operacional e encerra o programa
                 return 0;
                 break;
@@ -29,5 +32,4 @@ int main() {
                 break;
         }
     }
-    return 0;
 }

@@ -6,17 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.cpp
-agenda.h
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.h
-iostream
--
-
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda.h
+../sources/agenda/agenda.h
 string
 -
 vector
 -
 ctime
+-
+
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.cpp
+agenda.h
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h
+iostream
+-
+
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h
+string
+-
+vector
+-
+ctime
+-
+
+/home/gustavo/Área de Trabalho/progAvancada/agendaProject/tests/unit_tests/ut_agenda.cpp
+agenda/agenda.h
+-
+cassert
+-
+catch2/catch.hpp
 -
 

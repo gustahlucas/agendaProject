@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named agendalib
+# Target rules for targets named agenda
 
 # Build rule for target.
-agendalib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agendalib
-.PHONY : agendalib
+agenda: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agenda
+.PHONY : agenda
 
 # fast build rule for target.
-agendalib/fast:
-	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/build
-.PHONY : agendalib/fast
+agenda/fast:
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/build
+.PHONY : agenda/fast
 
 #=============================================================================
 # Target rules for targets named agendaProject
@@ -150,8 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... agenda"
 	@echo "... agendaProject"
-	@echo "... agendalib"
 .PHONY : help
 
 

@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/CMakeFiles/agendalib.dir/DependInfo.cmake"
+  "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/CMakeFiles/agenda.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

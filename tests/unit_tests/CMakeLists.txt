@@ -14,6 +14,6 @@ if (NOT Catch2_FOUND)
 endif()
 
 add_executable(ut_agenda ut_agenda.cpp)
-target_link_libraries(ut_agenda PRIVATE agendalib)
+target_link_libraries(ut_agenda PRIVATE agenda)
 target_link_libraries(ut_agenda PRIVATE Catch2)
 add_test(ut_agenda_test ut_agenda)

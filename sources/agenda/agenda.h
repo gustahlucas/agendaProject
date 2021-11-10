@@ -13,6 +13,12 @@ enum OPERACOES {
     INSERIR_COMPROMISSO, EXIBIR_COMPROMISSO, VER_COMPROMISSO_DO_DIA, SAIR
 };
 
+template <typename T>
+struct array {
+    size_t x;
+    T *ary;
+};
+
 struct itemAgenda{
     int dia = 0;
     int mes = 0;

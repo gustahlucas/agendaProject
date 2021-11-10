@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-sources/CMakeFiles/agendalib.dir/rule:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/agendalib.dir/rule
-.PHONY : sources/CMakeFiles/agendalib.dir/rule
+sources/CMakeFiles/agenda.dir/rule:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/agenda.dir/rule
+.PHONY : sources/CMakeFiles/agenda.dir/rule
 
 # Convenience name for target.
-agendalib: sources/CMakeFiles/agendalib.dir/rule
-.PHONY : agendalib
+agenda: sources/CMakeFiles/agenda.dir/rule
+.PHONY : agenda
 
 # fast build rule for target.
-agendalib/fast:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/build
-.PHONY : agendalib/fast
+agenda/fast:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/build
+.PHONY : agenda/fast
 
 __/tests/unit_tests/ut_agenda.o: __/tests/unit_tests/ut_agenda.cpp.o
 .PHONY : __/tests/unit_tests/ut_agenda.o
 
 # target to build an object file
 __/tests/unit_tests/ut_agenda.cpp.o:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/__/tests/unit_tests/ut_agenda.cpp.o
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o
 .PHONY : __/tests/unit_tests/ut_agenda.cpp.o
 
 __/tests/unit_tests/ut_agenda.i: __/tests/unit_tests/ut_agenda.cpp.i
@@ -143,7 +143,7 @@ __/tests/unit_tests/ut_agenda.i: __/tests/unit_tests/ut_agenda.cpp.i
 
 # target to preprocess a source file
 __/tests/unit_tests/ut_agenda.cpp.i:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/__/tests/unit_tests/ut_agenda.cpp.i
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.i
 .PHONY : __/tests/unit_tests/ut_agenda.cpp.i
 
 __/tests/unit_tests/ut_agenda.s: __/tests/unit_tests/ut_agenda.cpp.s
@@ -151,7 +151,7 @@ __/tests/unit_tests/ut_agenda.s: __/tests/unit_tests/ut_agenda.cpp.s
 
 # target to generate assembly for a file
 __/tests/unit_tests/ut_agenda.cpp.s:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/__/tests/unit_tests/ut_agenda.cpp.s
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.s
 .PHONY : __/tests/unit_tests/ut_agenda.cpp.s
 
 agenda/agenda.o: agenda/agenda.cpp.o
@@ -159,7 +159,7 @@ agenda/agenda.o: agenda/agenda.cpp.o
 
 # target to build an object file
 agenda/agenda.cpp.o:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/agenda/agenda.cpp.o
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.o
 .PHONY : agenda/agenda.cpp.o
 
 agenda/agenda.i: agenda/agenda.cpp.i
@@ -167,7 +167,7 @@ agenda/agenda.i: agenda/agenda.cpp.i
 
 # target to preprocess a source file
 agenda/agenda.cpp.i:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/agenda/agenda.cpp.i
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.i
 .PHONY : agenda/agenda.cpp.i
 
 agenda/agenda.s: agenda/agenda.cpp.s
@@ -175,7 +175,7 @@ agenda/agenda.s: agenda/agenda.cpp.s
 
 # target to generate assembly for a file
 agenda/agenda.cpp.s:
-	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agendalib.dir/build.make sources/CMakeFiles/agendalib.dir/agenda/agenda.cpp.s
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.s
 .PHONY : agenda/agenda.cpp.s
 
 # Help Target
@@ -186,7 +186,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... agendalib"
+	@echo "... agenda"
 	@echo "... __/tests/unit_tests/ut_agenda.o"
 	@echo "... __/tests/unit_tests/ut_agenda.i"
 	@echo "... __/tests/unit_tests/ut_agenda.s"
