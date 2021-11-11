@@ -7,18 +7,42 @@
 
 #include <string>
 #include <vector>
+#include <queue>
 #include <ctime>
 
 enum OPERACOES {
     INSERIR_COMPROMISSO, EXIBIR_COMPROMISSO, VER_COMPROMISSO_DO_DIA, SAIR
 };
+template <class Type, class Container = std::vector <Type>>
+class queue;
 
-template <typename T>
-struct array {
-    size_t x;
-    T *ary;
+class Agenda {
+private:
+        int dia;
+        int mes;
+        int ano;
+        std::string descricao;
+public:
+    //Constructor
+    Agenda();
+    Agenda(int dia, int mes, int ano, const std::string &descricao);
+
+    // Getters e setters
+    int getDia() const;
+    void setDia(int dia);
+    int getMes() const;
+    void setMes(int mes);
+    int getAno() const;
+    void setAno(int ano);
+    const std::string &getDescricao() const;
+    void setDescricao(const std::string &descricao);
+
+    // Functions
+    void exibeItensAgenda(std::queue<class Agenda> &lista);
+    void addItemAgenda(std::queue<class Agenda> &lista);
+    std::queue<class Agenda> recuperarCompromissos(std::queue<class Agenda> &lista);
+
 };
-
 struct itemAgenda{
     int dia = 0;
     int mes = 0;
@@ -29,8 +53,5 @@ struct itemAgenda{
 struct tm* recuperarData();
 
 OPERACOES screenMenu();
-void exibeItensAgenda(std::vector<struct itemAgenda> &lista);
-void addItemAgenda(std::vector<struct itemAgenda> &lista);
-std::vector<struct itemAgenda> recuperarCompromissos(std::vector<struct itemAgenda> &lista);
 
 #endif //AGENDAPROJECT_AGENDA_H

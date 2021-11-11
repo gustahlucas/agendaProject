@@ -27,49 +27,89 @@ OPERACOES screenMenu(){
     return (OPERACOES) escolha;
 }
 
-void addItemAgenda (vector<struct itemAgenda> &lista){
-    struct itemAgenda newItem;
-
+void Agenda::addItemAgenda (std::queue<Agenda> &lista){
+    int dia, mes, ano; string descricao;
     cout << "Informe o dia: " << endl;
-    cin >> newItem.dia;
+    cin >> dia;
 
     cout << "Informe o mes: " << endl;
-    cin >> newItem.mes;
+    cin >> mes;
 
     cout << "Informe o ano: " << endl;
-    cin >> newItem.ano;
+    cin >> ano;
 
     cin.ignore();
     cout << "Descreva o compromisso: " << endl;
-    getline(cin, newItem.descricao);
-
-    lista.push_back(newItem);
+    getline(cin, descricao);
+    Agenda newItem(dia, mes, ano, descricao);
+    lista.push(newItem);
 }
-void exibeItensAgenda(vector<struct itemAgenda> &lista){
+void Agenda::exibeItensAgenda(std::queue<Agenda> &lista){
     if (!lista.empty()) {
         cout << "Compromisso: " << endl;
         int cont = 1;
-        for (struct itemAgenda i: lista) {
+        Agenda compromisso;
+        cout <<"Result: " << lista.empty() << endl;
+//        while (!lista.empty()) {
+            compromisso = lista.front();
             cout << cont << endl;
-            cout << " " << i.dia << " - " << i.mes
-                 << " - " << i.ano << " - " << i.descricao << endl;
+            cout << " " << compromisso.getDia() << " - " << compromisso.getMes()
+                 << " - " << compromisso.getAno() << " - " << compromisso.getDescricao() << endl;
             cont++;
-        }
+//        }
     }else {
         cout << "Nenhum compromisso encontrado ou cadastrado " << endl;
     }
 }
 
-vector <struct itemAgenda> recuperarCompromissos (vector<struct itemAgenda> &lista){
+std::queue < Agenda> Agenda::recuperarCompromissos(std::queue< Agenda> &lista) {
     auto data = recuperarData();
-    vector<struct itemAgenda> resultado;
+    std::queue<Agenda> resultado;
 
-    for(auto i : lista){
-        if (data->tm_year + 1900 != i.ano) continue;
-        if (data->tm_mon + 1 != i.mes) continue;
-        if (data->tm_mday != i.dia) continue;
+    while(!lista.empty()){
+        Agenda compromisso = lista.front();
+        if (data->tm_year + 1900 != compromisso.getAno()) continue;
+        if (data->tm_mon + 1 != compromisso.getMes()) continue;
+        if (data->tm_mday != compromisso.getDia()) continue;
 
-        resultado.push_back(i);
+        resultado.push(compromisso);
     }
     return resultado;
 }
+
+int Agenda::getDia() const {
+    return dia;
+}
+
+void Agenda::setDia(int dia) {
+    Agenda::dia = dia;
+}
+
+int Agenda::getMes() const {
+    return mes;
+}
+
+void Agenda::setMes(int mes) {
+    Agenda::mes = mes;
+}
+
+int Agenda::getAno() const {
+    return ano;
+}
+
+void Agenda::setAno(int ano) {
+    Agenda::ano = ano;
+}
+
+const string &Agenda::getDescricao() const {
+    return descricao;
+}
+
+void Agenda::setDescricao(const string &descricao) {
+    Agenda::descricao = descricao;
+}
+
+Agenda::Agenda() {}
+
+Agenda::Agenda(int dia, int mes, int ano, const string &descricao) : dia(dia), mes(mes), ano(ano),
+                                                                     descricao(descricao) {}

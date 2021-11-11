@@ -1,25 +1,26 @@
 #include <iostream>
 #include <agenda/agenda.h>
+#include <queue>
 
-std::vector<struct itemAgenda> listaItensAgenda;
+
 
 int main() {
-
-    std::vector<itemAgenda> compromissoHoje;
+    std::queue<Agenda> listaItensAgenda;
+    std::queue<Agenda> compromissoHoje;
+    Agenda agenda;
 
     while(true){
         OPERACOES escolha = screenMenu();
         switch (escolha) {
             case INSERIR_COMPROMISSO:
-                addItemAgenda(listaItensAgenda);
+                agenda.addItemAgenda(listaItensAgenda);
                 break;
             case EXIBIR_COMPROMISSO:
-                std::cout<< "Seu compromissos são: " << std::endl;
-                exibeItensAgenda(listaItensAgenda);
+                agenda.exibeItensAgenda(listaItensAgenda);
                 break;
             case VER_COMPROMISSO_DO_DIA:
-                compromissoHoje = recuperarCompromissos(listaItensAgenda);
-                exibeItensAgenda(compromissoHoje);
+                compromissoHoje = agenda.recuperarCompromissos(listaItensAgenda);
+                agenda.exibeItensAgenda(compromissoHoje);
                 break;
             case SAIR:
 
