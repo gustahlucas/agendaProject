@@ -15,6 +15,12 @@ queue
 -
 ctime
 -
+user/user.h
+-
+
+../sources/user/user.h
+string
+-
 
 /home/gustavo/Área de Trabalho/progAvancada/agendaProject/standalone/main.cpp
 iostream

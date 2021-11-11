@@ -136,6 +136,12 @@
 		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h">
 			<Option target="agenda"/>
 		</Unit>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.cpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.h">
+			<Option target="agenda"/>
+		</Unit>
 		<Unit filename="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/standalone/main.cpp">
 			<Option target="agendaProject"/>
 		</Unit>

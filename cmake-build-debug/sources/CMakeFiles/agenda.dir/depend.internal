@@ -3,7 +3,12 @@
 
 sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o
  ../sources/agenda/agenda.h
+ ../sources/user/user.h
  /home/gustavo/Área de Trabalho/progAvancada/agendaProject/tests/unit_tests/ut_agenda.cpp
 sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.o
+ ../sources/user/user.h
  /home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.cpp
  /home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h
+sources/CMakeFiles/agenda.dir/user/user.cpp.o
+ /home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.cpp
+ /home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.h

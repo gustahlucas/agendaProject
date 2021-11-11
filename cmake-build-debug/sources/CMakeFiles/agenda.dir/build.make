@@ -92,19 +92,34 @@ sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.s"
 	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/tests/unit_tests/ut_agenda.cpp" -o CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.s
 
+sources/CMakeFiles/agenda.dir/user/user.cpp.o: sources/CMakeFiles/agenda.dir/flags.make
+sources/CMakeFiles/agenda.dir/user/user.cpp.o: ../sources/user/user.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sources/CMakeFiles/agenda.dir/user/user.cpp.o"
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/agenda.dir/user/user.cpp.o -c "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.cpp"
+
+sources/CMakeFiles/agenda.dir/user/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agenda.dir/user/user.cpp.i"
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.cpp" > CMakeFiles/agenda.dir/user/user.cpp.i
+
+sources/CMakeFiles/agenda.dir/user/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agenda.dir/user/user.cpp.s"
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/user/user.cpp" -o CMakeFiles/agenda.dir/user/user.cpp.s
+
 # Object files for target agenda
 agenda_OBJECTS = \
 "CMakeFiles/agenda.dir/agenda/agenda.cpp.o" \
-"CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o"
+"CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o" \
+"CMakeFiles/agenda.dir/user/user.cpp.o"
 
 # External object files for target agenda
 agenda_EXTERNAL_OBJECTS =
 
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.o
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o
+sources/libagenda.a: sources/CMakeFiles/agenda.dir/user/user.cpp.o
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/build.make
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libagenda.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libagenda.a"
 	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && $(CMAKE_COMMAND) -P CMakeFiles/agenda.dir/cmake_clean_target.cmake
 	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agenda.dir/link.txt --verbose=$(VERBOSE)
 

@@ -3,7 +3,12 @@
 
 sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.o: \
  ../sources/agenda/agenda.h \
+ ../sources/user/user.h \
  ../tests/unit_tests/ut_agenda.cpp
 sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.o: \
+ ../sources/user/user.h \
  ../sources/agenda/agenda.cpp \
  ../sources/agenda/agenda.h
+sources/CMakeFiles/agenda.dir/user/user.cpp.o: \
+ ../sources/user/user.cpp \
+ ../sources/user/user.h

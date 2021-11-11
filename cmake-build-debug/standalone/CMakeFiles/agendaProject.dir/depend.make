@@ -3,4 +3,5 @@
 
 standalone/CMakeFiles/agendaProject.dir/main.cpp.o: \
  ../sources/agenda/agenda.h \
+ ../sources/user/user.h \
  ../standalone/main.cpp

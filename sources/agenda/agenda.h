@@ -9,6 +9,7 @@
 #include <vector>
 #include <queue>
 #include <ctime>
+#include <user/user.h>
 
 enum OPERACOES {
     INSERIR_COMPROMISSO, EXIBIR_COMPROMISSO, VER_COMPROMISSO_DO_DIA, SAIR
@@ -22,6 +23,7 @@ private:
         int mes;
         int ano;
         std::string descricao;
+        User user;
 public:
     //Constructor
     Agenda();

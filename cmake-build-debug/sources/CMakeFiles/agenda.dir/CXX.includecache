@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.cpp
-agenda.h
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h
-iostream
--
-
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/sources/agenda/agenda.h
-string
--
-vector
--
-queue
--
-ctime
--
-

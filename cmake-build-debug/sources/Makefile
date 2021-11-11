@@ -178,6 +178,30 @@ agenda/agenda.cpp.s:
 	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.s
 .PHONY : agenda/agenda.cpp.s
 
+user/user.o: user/user.cpp.o
+.PHONY : user/user.o
+
+# target to build an object file
+user/user.cpp.o:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/user/user.cpp.o
+.PHONY : user/user.cpp.o
+
+user/user.i: user/user.cpp.i
+.PHONY : user/user.i
+
+# target to preprocess a source file
+user/user.cpp.i:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/user/user.cpp.i
+.PHONY : user/user.cpp.i
+
+user/user.s: user/user.cpp.s
+.PHONY : user/user.s
+
+# target to generate assembly for a file
+user/user.cpp.s:
+	cd "/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/agenda.dir/build.make sources/CMakeFiles/agenda.dir/user/user.cpp.s
+.PHONY : user/user.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +217,9 @@ help:
 	@echo "... agenda/agenda.o"
 	@echo "... agenda/agenda.i"
 	@echo "... agenda/agenda.s"
+	@echo "... user/user.o"
+	@echo "... user/user.i"
+	@echo "... user/user.s"
 .PHONY : help
 
 
