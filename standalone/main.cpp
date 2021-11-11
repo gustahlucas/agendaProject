@@ -21,6 +21,7 @@ int main() {
             case VER_COMPROMISSO_DO_DIA:
                 compromissoHoje = agenda.recuperarCompromissos(listaItensAgenda);
                 agenda.exibeItensAgenda(compromissoHoje);
+
                 break;
             case SAIR:
 
