@@ -1,37 +1,17 @@
-#include <iostream>
 #include <agenda/agenda.h>
-#include <queue>
 
-
+Agenda createAgenda() {
+    Agenda* agenda = new Agenda("Gustavo", "gustavo.lucas@hashasb", 12, 12,2021, "Encontro com deus", 30, 13, 30);
+    agenda->setName("Agenda Profissional");
+    agenda->setDescricao("Agenda com os compromissos da carreira profissional");
+    agenda->addItemAgenda(12, 12, 2021, "Ola mundo", 25, 13,15);
+    agenda->exibeItensAgenda(*agenda);
+    agenda->concorrents(agenda->getCompromissos());
+    return *agenda;
+}
 
 int main() {
-    std::queue<Agenda> listaItensAgenda;
-    std::queue<Agenda> compromissoHoje;
-    Agenda agenda;
+    Agenda agenda = createAgenda();
+    return 0;
 
-    while(true){
-        OPERACOES escolha = screenMenu();
-        switch (escolha) {
-            case INSERIR_COMPROMISSO:
-                agenda.addItemAgenda(listaItensAgenda);
-                break;
-            case EXIBIR_COMPROMISSO:
-                agenda.exibeItensAgenda(listaItensAgenda);
-                break;
-            case VER_COMPROMISSO_DO_DIA:
-                compromissoHoje = agenda.recuperarCompromissos(listaItensAgenda);
-                agenda.exibeItensAgenda(compromissoHoje);
-
-                break;
-            case SAIR:
-
-                std::cout << " Encerrando o programa" << std::endl;
-                //Retorna ao sistema operacional e encerra o programa
-                return 0;
-                break;
-            default:
-                std::cout << "Opção invalida" << std::endl;
-                break;
-        }
-    }
 }

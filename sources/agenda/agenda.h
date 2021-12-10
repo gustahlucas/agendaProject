@@ -7,53 +7,44 @@
 
 #include <string>
 #include <vector>
-#include <queue>
 #include <ctime>
 #include <user/user.h>
-
-enum OPERACOES {
-    INSERIR_COMPROMISSO, EXIBIR_COMPROMISSO, VER_COMPROMISSO_DO_DIA, SAIR
-};
-template <class Type, class Container = std::vector <Type>>
-class queue;
+#include <compromisso/compromisso.hpp>
+#include <iomanip>
+#include <iostream>
+#include <cstdlib>
+#include <unistd.h>
+#include <thread>
 
 class Agenda {
 private:
-        int dia;
-        int mes;
-        int ano;
-        std::string descricao;
-        User user;
+    std::vector <Compromisso> compromissos;
+    User user;
+    std::string name = "Pessoal";
+    std::string descricao = "Agenda de compromissos";
 public:
     //Constructor
     Agenda();
-    Agenda(int dia, int mes, int ano, const std::string &descricao);
+    Agenda(std::string , std::string , int , int , int , const std::string &, int , int , int );
 
-    // Getters e setters
-    int getDia() const;
-    void setDia(int dia);
-    int getMes() const;
-    void setMes(int mes);
-    int getAno() const;
-    void setAno(int ano);
+    void exibeItensAgenda( Agenda  );
+    void addItemAgenda ( int , int , int , const std::string &, int , int , int);
+    void addCompromisso (Compromisso );
+    int concorrents (std::vector<Compromisso> );
+    void comecarContar(int);
+    const std::vector <Compromisso > &getCompromissos();
+    void setCompromissos( const std::vector <Compromisso > & );
+    const User &getUser() const;
+    void setUser( const User & );
+    const std::string &getName() const;
+    void setName( const std::string & );
     const std::string &getDescricao() const;
-    void setDescricao(const std::string &descricao);
+    void setDescricao( const std::string & );
 
-    // Functions
-    void exibeItensAgenda(std::queue<class Agenda> &lista);
-    void addItemAgenda(std::queue<class Agenda> &lista);
-    std::queue<class Agenda> recuperarCompromissos(std::queue<class Agenda> &lista);
-
-};
-struct itemAgenda{
-    int dia = 0;
-    int mes = 0;
-    int ano = 0;
-    std::string descricao;
+    virtual ~Agenda();
 };
 
-struct tm* recuperarData();
 
-OPERACOES screenMenu();
+
 
 #endif //AGENDAPROJECT_AGENDA_H

@@ -18,5 +18,8 @@ public:
     void setName(const std::string &name);
     const std::string &getEmail() const ;
     void setEmail(const std::string &email);
+    User();
+
+    User( const std::string &name, const std::string &email );
 };
 #endif //AGENDAPROJECT_USER_H

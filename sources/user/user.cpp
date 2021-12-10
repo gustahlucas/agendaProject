@@ -19,3 +19,7 @@ const std::string &User::getEmail() const {
 void User::setEmail(const std::string &email) {
     User::email = email;
 }
+
+User::User() {}
+
+User::User( const std::string &name, const std::string &email ) : name( name ), email( email ) {}

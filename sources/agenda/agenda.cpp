@@ -14,102 +14,134 @@ struct tm* recuperarData(){
     return localtime(&tt);
 }
 
-OPERACOES screenMenu(){
-    cout << "Escolha o que deseja realizar: " << endl;
-    cout << INSERIR_COMPROMISSO << " - Inserir um compromisso " << endl;
-    cout << EXIBIR_COMPROMISSO << " - Exibir todos os compromissos " << endl;
-    cout << VER_COMPROMISSO_DO_DIA << " - Exibir compromissos " << endl;
-    cout << SAIR << " - Sair do programa " << endl;
+void Agenda::addItemAgenda ( int dia, int mes, int ano, const std::string &descricao, int duracao, int hora, int min){
 
-    int escolha = 0;
-    cin >> escolha;
-
-    return (OPERACOES) escolha;
+    Compromisso compromisso;
+    compromisso.setDia(dia);
+    compromisso.setMes(mes);
+    compromisso.setAno(ano);
+    compromisso.setDescricao(descricao);
+    compromisso.setDuracao(duracao);
+    compromisso.setHora(hora);
+    compromisso.setMin(min);
+    addCompromisso(compromisso);
+}
+void Agenda::addCompromisso (Compromisso compromisso){
+    compromissos.push_back(compromisso);
 }
 
-void Agenda::addItemAgenda (std::queue<Agenda> &lista){
-    int dia, mes, ano; string descricao;
-    cout << "Informe o dia: " << endl;
-    cin >> dia;
+void Agenda::exibeItensAgenda(Agenda agenda){
+    compromissos= agenda.getCompromissos();
 
-    cout << "Informe o mes: " << endl;
-    cin >> mes;
+    if (!compromissos.empty()) {
+        cout << "--------------- COMPROMISSOS NA AGENDA --------------" << endl;
+        cout << "Nome: " << agenda.getName() << " |  Descricao: " << agenda.getDescricao() << endl;
+        cout << "Criada por: " << agenda.getUser().getName() << endl;
+        cout << "=========================================================" << endl;
 
-    cout << "Informe o ano: " << endl;
-    cin >> ano;
-
-    cin.ignore();
-    cout << "Descreva o compromisso: " << endl;
-    getline(cin, descricao);
-    Agenda newItem(dia, mes, ano, descricao);
-    lista.push(newItem);
-}
-void Agenda::exibeItensAgenda(std::queue<Agenda> &lista){
-    if (!lista.empty()) {
-        cout << "Compromisso: " << endl;
-        int cont = 1;
-        Agenda compromisso;
-        cout <<"Result: " << lista.empty() << endl;
-//        while (!lista.empty()) {
-            compromisso = lista.front();
-            cout << cont << endl;
-            cout << " " << compromisso.getDia() << " - " << compromisso.getMes()
-                 << " - " << compromisso.getAno() << " - " << compromisso.getDescricao() << endl;
-            cont++;
-//        }
+        for (const auto &item : compromissos ) {
+            cout << "Descricao do compromisso: " << item.getDescricao() << endl;
+            cout << "Data: " << item.getDia() << "/" << item.getMes() << "/" << item.getAno()  << " Hora: " << item.getHora() << ":" << item.getMin() << endl;
+            cout << "Com duracao de: " << item.getDuracao() << " min" << endl;
+            cout << "-------------------------------------------------------" << endl;
+        }
     }else {
         cout << "Nenhum compromisso encontrado ou cadastrado " << endl;
     }
 }
-
-std::queue < Agenda> Agenda::recuperarCompromissos(std::queue< Agenda> &lista) {
-    auto data = recuperarData();
-    std::queue<Agenda> resultado;
-
-    while(!lista.empty()){
-        Agenda compromisso = lista.front();
-        if (data->tm_year + 1900 != compromisso.getAno()) continue;
-        if (data->tm_mon + 1 != compromisso.getMes()) continue;
-        if (data->tm_mday != compromisso.getDia()) continue;
-
-        resultado.push(compromisso);
+int Agenda::concorrents (vector<Compromisso> compromisso){
+    if (!compromisso.empty()){
+        if (compromisso.size() >= 2 ) {
+            for ( int i = 0; i < compromisso.size(); i++ ) {
+                if ( compromisso[ i ].getDia() == compromisso[ i+1 ].getDia()
+                     && compromisso[i].getMes() == compromisso[i+1].getMes()
+                     && compromisso[i].getAno() == compromisso[i+1].getAno()){
+                    if (compromisso[i].getHora() == compromisso[i+1].getHora()){
+                        if (compromisso[i].getMin() <= compromisso[i+1].getMin() || compromisso[i].getMin() >= compromisso[i+1].getMin())
+                        if ( compromisso[i].getDuracao() > compromisso[i+1].getDuracao() ){
+                            comecarContar(compromisso[i].getDuracao() - compromisso[i+1].getDuracao());
+                            return 1;
+                        }
+                    }
+                }else {
+                    return 0;
+                }
+            }
+        }
     }
-    return resultado;
+}
+void telaRelogio(int horas, int minutos, int segundos) {
+    system("cls"); // system call to clear the screen
+
+    std::cout << std::setfill(' ') << std::setw(30) << " --------------------------\n";
+    std::cout << std::setfill(' ') << std::setw(3);
+    std::cout << "| " << std::setfill('0') << std::setw(2) << horas << " hrs | ";
+    std::cout << std::setfill('0') << std::setw(2) << minutos << " min | ";
+    std::cout << std::setfill('0') << std::setw(2) << segundos << " sec |" << std::endl;
+    std::cout << std::setfill(' ') << std::setw(30) << " --------------------------\n";
+}
+void crono(int horas, int minutos, int segundos) {
+    while (horas > 0 || minutos > 0 || segundos > 0) {
+        telaRelogio(horas, minutos, segundos);
+        sleep(1);
+
+        if (segundos > 0) segundos--; // decrementa segundos
+        else {
+            segundos = 59;
+            if (minutos > 0) minutos--; // decrementa minutos
+            else {
+                minutos = 59;
+                if (horas > 0) horas--; // decrementa horas
+            }
+        }
+    }
+}
+void Agenda::comecarContar(int duracao ){
+    std::thread t( crono, 0, duracao, 0);
+    t.join();
 }
 
-int Agenda::getDia() const {
-    return dia;
+
+Agenda::Agenda() = default;
+
+Agenda::Agenda(string name, string email, int dia, int mes, int ano, const std::string &descricao, int duracao, int hora, int min) {
+    this->user = User(name, email);
+    addItemAgenda(dia, mes, ano, descricao, duracao, hora, min);
 }
 
-void Agenda::setDia(int dia) {
-    Agenda::dia = dia;
+const vector <Compromisso > &Agenda::getCompromissos()  {
+    return compromissos;
 }
 
-int Agenda::getMes() const {
-    return mes;
+void Agenda::setCompromissos( const vector <Compromisso > &compromissos ) {
+    Agenda::compromissos = compromissos;
 }
 
-void Agenda::setMes(int mes) {
-    Agenda::mes = mes;
+const User &Agenda::getUser() const {
+    return user;
 }
 
-int Agenda::getAno() const {
-    return ano;
+void Agenda::setUser( const User &user ) {
+    Agenda::user = user;
 }
 
-void Agenda::setAno(int ano) {
-    Agenda::ano = ano;
+const string &Agenda::getName() const {
+    return name;
+}
+
+void Agenda::setName( const string &name ) {
+    Agenda::name = name;
 }
 
 const string &Agenda::getDescricao() const {
     return descricao;
 }
 
-void Agenda::setDescricao(const string &descricao) {
+void Agenda::setDescricao( const string &descricao ) {
     Agenda::descricao = descricao;
 }
 
-Agenda::Agenda() {}
+Agenda::~Agenda() {
 
-Agenda::Agenda(int dia, int mes, int ano, const string &descricao) : dia(dia), mes(mes), ano(ano),
-                                                                     descricao(descricao) {}
+
+}

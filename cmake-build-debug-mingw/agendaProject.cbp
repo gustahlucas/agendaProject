@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="agendaProject"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\sources\;CMake Files\standalone\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agenda">
+				<Option output="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/libagenda.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Code/progAvan/agendaProject/sources"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 agenda"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agenda/fast">
+				<Option output="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/libagenda.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Code/progAvan/agendaProject/sources"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 agenda/fast"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agendaProject">
+				<Option output="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/agendaProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Code/progAvan/agendaProject/sources"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 agendaProject"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="agendaProject/fast">
+				<Option output="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/agendaProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Code/progAvan/agendaProject/sources"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programas/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 agendaProject/fast"/>
+					<CompileFile command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programas/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/agenda/agenda.cpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/agenda/agenda.h">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/compromisso/compromisso.cpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/compromisso/compromisso.hpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/user/user.cpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/user/user.h">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/standalone/main.cpp">
+			<Option target="agendaProject"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/tests/unit_tests/ut_agenda.cpp">
+			<Option target="agenda"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/sources/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sources\"/>
+		</Unit>
+		<Unit filename="D:/Code/progAvan/agendaProject/standalone/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\standalone\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

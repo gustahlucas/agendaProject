@@ -1,0 +1,8 @@
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/CMakeFiles/rebuild_cache.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/CMakeFiles/agenda.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/sources/CMakeFiles/edit_cache.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/CMakeFiles/agendaProject.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/CMakeFiles/edit_cache.dir
+D:/Code/progAvan/agendaProject/cmake-build-debug-mingw/standalone/CMakeFiles/rebuild_cache.dir
