@@ -9,7 +9,8 @@ Tasks performed:
 
 - [x] Initial project creation 
 - [x] Project theme definition  
-- [x] Creation of the adapter container  
-
+- [x] Creation of the container  
+- [x] Create parallelism
+- [] UI
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/)
