@@ -70,34 +70,20 @@ int Agenda::concorrents (vector<Compromisso> compromisso){
         }
     }
 }
-void telaRelogio(int horas, int minutos, int segundos) {
+void tempoRestanteTela( int duracao) {
     system("cls"); // system call to clear the screen
-
-    std::cout << std::setfill(' ') << std::setw(30) << " --------------------------\n";
-    std::cout << std::setfill(' ') << std::setw(3);
-    std::cout << "| " << std::setfill('0') << std::setw(2) << horas << " hrs | ";
-    std::cout << std::setfill('0') << std::setw(2) << minutos << " min | ";
-    std::cout << std::setfill('0') << std::setw(2) << segundos << " sec |" << std::endl;
-    std::cout << std::setfill(' ') << std::setw(30) << " --------------------------\n";
+    std::cout << "Tempo restante: " << duracao << " segundos"<< std::endl;
 }
-void crono(int horas, int minutos, int segundos) {
-    while (horas > 0 || minutos > 0 || segundos > 0) {
-        telaRelogio(horas, minutos, segundos);
+void crono( int duracao) {
+    while (duracao > 0 ) {
+        tempoRestanteTela(duracao);
         sleep(1);
-
-        if (segundos > 0) segundos--; // decrementa segundos
-        else {
-            segundos = 59;
-            if (minutos > 0) minutos--; // decrementa minutos
-            else {
-                minutos = 59;
-                if (horas > 0) horas--; // decrementa horas
-            }
-        }
+        if (duracao > 0) duracao--;
     }
 }
 void Agenda::comecarContar(int duracao ){
-    std::thread t( crono, 0, duracao, 0);
+    int temp = duracao*60;
+    std::thread t( crono, temp);
     t.join();
 }
 
