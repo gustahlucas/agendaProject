@@ -71,7 +71,7 @@ int Agenda::concorrents (vector<Compromisso> compromisso){
     }
 }
 void tempoRestanteTela( int duracao) {
-    system("cls"); // system call to clear the screen
+    system("cls");
     std::cout << "Tempo restante: " << duracao << " segundos"<< std::endl;
 }
 void crono( int duracao) {
