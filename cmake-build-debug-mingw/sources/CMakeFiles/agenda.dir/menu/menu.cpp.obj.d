@@ -1,6 +1,6 @@
-standalone/CMakeFiles/agendaProject.dir/main.cpp.obj: \
- D:\Code\progAvan\agendaProject\standalone\main.cpp \
- D:/Code/progAvan/agendaProject/sources/menu/menu.hpp \
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj: \
+ D:\Code\progAvan\agendaProject\sources\menu\menu.cpp \
+ D:\Code\progAvan\agendaProject\sources\menu\menu.hpp \
  D:/Programas/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
  D:/Programas/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/Programas/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \

@@ -201,6 +201,30 @@ compromisso/compromisso.cpp.s:
 	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw && $(MAKE) $(MAKESILENT) -f sources\CMakeFiles\agenda.dir\build.make sources/CMakeFiles/agenda.dir/compromisso/compromisso.cpp.s
 .PHONY : compromisso/compromisso.cpp.s
 
+menu/menu.obj: menu/menu.cpp.obj
+.PHONY : menu/menu.obj
+
+# target to build an object file
+menu/menu.cpp.obj:
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw && $(MAKE) $(MAKESILENT) -f sources\CMakeFiles\agenda.dir\build.make sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj
+.PHONY : menu/menu.cpp.obj
+
+menu/menu.i: menu/menu.cpp.i
+.PHONY : menu/menu.i
+
+# target to preprocess a source file
+menu/menu.cpp.i:
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw && $(MAKE) $(MAKESILENT) -f sources\CMakeFiles\agenda.dir\build.make sources/CMakeFiles/agenda.dir/menu/menu.cpp.i
+.PHONY : menu/menu.cpp.i
+
+menu/menu.s: menu/menu.cpp.s
+.PHONY : menu/menu.s
+
+# target to generate assembly for a file
+menu/menu.cpp.s:
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw && $(MAKE) $(MAKESILENT) -f sources\CMakeFiles\agenda.dir\build.make sources/CMakeFiles/agenda.dir/menu/menu.cpp.s
+.PHONY : menu/menu.cpp.s
+
 user/user.obj: user/user.cpp.obj
 .PHONY : user/user.obj
 
@@ -243,6 +267,9 @@ help:
 	@echo ... compromisso/compromisso.obj
 	@echo ... compromisso/compromisso.i
 	@echo ... compromisso/compromisso.s
+	@echo ... menu/menu.obj
+	@echo ... menu/menu.i
+	@echo ... menu/menu.s
 	@echo ... user/user.obj
 	@echo ... user/user.i
 	@echo ... user/user.s

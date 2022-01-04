@@ -128,12 +128,28 @@ sources/CMakeFiles/agenda.dir/compromisso/compromisso.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agenda.dir/compromisso/compromisso.cpp.s"
 	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && "D:\Programas\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\progAvan\agendaProject\sources\compromisso\compromisso.cpp -o CMakeFiles\agenda.dir\compromisso\compromisso.cpp.s
 
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj: sources/CMakeFiles/agenda.dir/flags.make
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj: sources/CMakeFiles/agenda.dir/includes_CXX.rsp
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj: ../sources/menu/menu.cpp
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj: sources/CMakeFiles/agenda.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj"
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && "D:\Programas\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj -MF CMakeFiles\agenda.dir\menu\menu.cpp.obj.d -o CMakeFiles\agenda.dir\menu\menu.cpp.obj -c D:\Code\progAvan\agendaProject\sources\menu\menu.cpp
+
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agenda.dir/menu/menu.cpp.i"
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && "D:\Programas\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\progAvan\agendaProject\sources\menu\menu.cpp > CMakeFiles\agenda.dir\menu\menu.cpp.i
+
+sources/CMakeFiles/agenda.dir/menu/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agenda.dir/menu/menu.cpp.s"
+	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && "D:\Programas\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\progAvan\agendaProject\sources\menu\menu.cpp -o CMakeFiles\agenda.dir\menu\menu.cpp.s
+
 # Object files for target agenda
 agenda_OBJECTS = \
 "CMakeFiles/agenda.dir/agenda/agenda.cpp.obj" \
 "CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.obj" \
 "CMakeFiles/agenda.dir/user/user.cpp.obj" \
-"CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj"
+"CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj" \
+"CMakeFiles/agenda.dir/menu/menu.cpp.obj"
 
 # External object files for target agenda
 agenda_EXTERNAL_OBJECTS =
@@ -142,9 +158,10 @@ sources/libagenda.a: sources/CMakeFiles/agenda.dir/agenda/agenda.cpp.obj
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.obj
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/user/user.cpp.obj
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj
+sources/libagenda.a: sources/CMakeFiles/agenda.dir/menu/menu.cpp.obj
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/build.make
 sources/libagenda.a: sources/CMakeFiles/agenda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libagenda.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libagenda.a"
 	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && $(CMAKE_COMMAND) -P CMakeFiles\agenda.dir\cmake_clean_target.cmake
 	cd /d D:\Code\progAvan\agendaProject\cmake-build-debug-mingw\sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\agenda.dir\link.txt --verbose=$(VERBOSE)
 

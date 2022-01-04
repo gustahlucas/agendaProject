@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Estrutura necessaria para recuperar o tempo atual da maquina
+
 struct tm* recuperarData(){
     time_t tt;
     time(&tt);
@@ -31,7 +31,7 @@ void Agenda::addCompromisso (Compromisso compromisso){
 }
 
 void Agenda::exibeItensAgenda(Agenda agenda){
-    compromissos= agenda.getCompromissos();
+    compromissos = agenda.getCompromissos();
 
     if (!compromissos.empty()) {
         cout << "--------------- COMPROMISSOS NA AGENDA --------------" << endl;
@@ -47,6 +47,37 @@ void Agenda::exibeItensAgenda(Agenda agenda){
         }
     }else {
         cout << "Nenhum compromisso encontrado ou cadastrado " << endl;
+    }
+}
+void Agenda::recuperarCompromissos(Agenda agenda) {
+    vector <Compromisso> &compromissos = agenda.getCompromissos();
+
+    if ( !compromissos.empty()) {
+        cout << "--------------- COMPROMISSOS NA AGENDA --------------" << endl;
+        cout << "Nome: " << agenda.getName() << " |  Descricao: " << agenda.getDescricao() << endl;
+        cout << "Criada por: " << agenda.getUser().getName() << endl;
+        cout << "=========================================================" << endl;
+
+        auto data = recuperarData();
+        vector <Compromisso> result;
+        for ( auto &i: compromissos ) {
+            if (data->tm_year + 1900 != i.getAno()) continue;
+            if (data->tm_mon + 1 != i.getMes()) continue;
+            if (data->tm_mday != i.getDia()) continue;
+
+            result.push_back(i);
+        }
+        if (!result.empty()){
+            for(auto &item : result){
+                cout << "Descricao do compromisso: " << item.getDescricao() << endl;
+                cout << "Data: " << item.getDia() << "/" << item.getMes() << "/" << item.getAno() << " Hora: "
+                     << item.getHora() << ":" << item.getMin() << endl;
+                cout << "Com duracao de: " << item.getDuracao() << " min" << endl;
+                cout << "-------------------------------------------------------" << endl;
+            }
+        } else{
+            cout << "Nenhum compromisso marcado para hoje" << endl;
+        }
     }
 }
 int Agenda::concorrents (vector<Compromisso> compromisso){
@@ -95,7 +126,7 @@ Agenda::Agenda(string name, string email, int dia, int mes, int ano, const std::
     addItemAgenda(dia, mes, ano, descricao, duracao, hora, min);
 }
 
-const vector <Compromisso > &Agenda::getCompromissos()  {
+vector <Compromisso > &Agenda::getCompromissos()  {
     return compromissos;
 }
 

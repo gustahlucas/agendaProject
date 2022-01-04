@@ -32,7 +32,8 @@ public:
     void addCompromisso (Compromisso );
     int concorrents (std::vector<Compromisso> );
     void comecarContar(int);
-    const std::vector <Compromisso > &getCompromissos();
+    void recuperarCompromissos(Agenda);
+    std::vector <Compromisso > &getCompromissos();
     void setCompromissos( const std::vector <Compromisso > & );
     const User &getUser() const;
     void setUser( const User & );

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/agenda.dir/agenda/agenda.cpp.obj.d"
   "CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj"
   "CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj.d"
+  "CMakeFiles/agenda.dir/menu/menu.cpp.obj"
+  "CMakeFiles/agenda.dir/menu/menu.cpp.obj.d"
   "CMakeFiles/agenda.dir/user/user.cpp.obj"
   "CMakeFiles/agenda.dir/user/user.cpp.obj.d"
   "libagenda.a"
