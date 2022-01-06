@@ -16,19 +16,19 @@ fm_novocontato::~fm_novocontato()
 void fm_novocontato::on_btn_gravar_clicked()
 {
     QString nome = ui->txt_nome->text();
-    QString telefone = ui->txt_telefone->text();
-    QString email = ui->txt_email->text();
+    QString data = ui->date_compromisso->text();
+    QString descricao = ui->txt_descricao->text();
 
     QSqlQuery query;
-    query.prepare("insert into tb_contatos (nome_contato,telefone_contato,email_contato) values"
+    query.prepare("insert into tb_compromisso (nome_compromisso,data_compromisso,descricao_compromisso) values"
                   "('" +
-                  nome + "','" + telefone + "','" + email + "')");
+                  nome + "','" + data + "','" + descricao + "')");
     if (query.exec())
     {
         QMessageBox::information(this, "", "Registro gravado com sucesso");
         ui->txt_nome->clear();
-        ui->txt_telefone->clear();
-        ui->txt_email->clear();
+        ui->date_compromisso->clear();
+        ui->txt_descricao->clear();
         ui->txt_nome->setFocus();
     }
     else

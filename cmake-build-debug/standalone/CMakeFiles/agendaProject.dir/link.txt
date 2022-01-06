@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/agendaProject.dir/main.cpp.o -o agendaProject  ../sources/libagenda.a 

@@ -1,2 +1,0 @@
-"D:\Programas\CLion 2021.3\bin\mingw\bin\ar.exe" qc libagenda.a CMakeFiles/agenda.dir/agenda/agenda.cpp.obj CMakeFiles/agenda.dir/__/tests/unit_tests/ut_agenda.cpp.obj CMakeFiles/agenda.dir/user/user.cpp.obj CMakeFiles/agenda.dir/compromisso/compromisso.cpp.obj CMakeFiles/agenda.dir/menu/menu.cpp.obj
-"D:\Programas\CLion 2021.3\bin\mingw\bin\ranlib.exe" libagenda.a

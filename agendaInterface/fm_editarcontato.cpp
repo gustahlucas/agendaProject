@@ -5,24 +5,24 @@
 
 static int id;
 
-fm_editarcontato::fm_editarcontato(QWidget *parent, int id_contato) : QDialog(parent),
+fm_editarcontato::fm_editarcontato(QWidget *parent, int id_compromisso) : QDialog(parent),
                                                                       ui(new Ui::fm_editarcontato)
 {
     ui->setupUi(this);
-    id = id_contato;
+    id = id_compromisso;
     QSqlQuery query;
-    query.prepare("select * from tb_contatos where id_contato=" + QString::number(id_contato));
+    query.prepare("select * from tb_compromisso where id_compromisso=" + QString::number(id_compromisso));
     if (query.exec())
     {
         query.first();
-//        QString telefone = ui->txt_telefone->text();
+        QString telefone = ui->date_compromisso->text();
         ui->txt_nome->setText(query.value(1).toString());
         query.value(2).toString();
-        ui->txt_email->setText(query.value(3).toString());
+        ui->txt_descricao->setText(query.value(3).toString());
     }
     else
     {
-        QMessageBox::warning(this, "ERRO", "Erro ao selecionar contato");
+        QMessageBox::warning(this, "ERRO", "Erro ao selecionar compromisso");
     }
 }
 
@@ -34,17 +34,17 @@ fm_editarcontato::~fm_editarcontato()
 void fm_editarcontato::on_btn_gravar_clicked()
 {
     QString nome = ui->txt_nome->text();
-    QString telefone = ui->txt_telefone->text();
-    QString email = ui->txt_email->text();
+    QString date = ui->date_compromisso->text();
+    QString descricao = ui->txt_descricao->text();
 
     QSqlQuery query;
-    query.prepare("update tb_contatos set nome_contato='" + nome + "', telefone_contato='" + telefone + "', email_contato='" + email + "' where id_contato=" + QString::number(id));
+    query.prepare("update tb_compromisso set nome_compromisso='" + nome + "', data_compromisso='" + date + "', descricao_compromisso='" + descricao + "' where id_compromisso=" + QString::number(id));
     if (query.exec())
     {
         this->close();
     }
     else
     {
-        QMessageBox::warning(this, "ERRO", "Erro ao atualizar contato");
+        QMessageBox::warning(this, "ERRO", "Erro ao atualizar compromisso");
     }
 }

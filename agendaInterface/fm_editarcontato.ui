@@ -78,7 +78,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QDateEdit" name="txt_telefone"/>
+       <widget class="QDateEdit" name="date_compromisso"/>
       </item>
      </layout>
     </item>
@@ -92,7 +92,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_email"/>
+       <widget class="QLineEdit" name="txt_descricao"/>
       </item>
      </layout>
     </item>
@@ -101,7 +101,7 @@
       <item>
        <widget class="QPushButton" name="btn_gravar">
         <property name="text">
-         <string>Gravar</string>
+         <string>Salvar</string>
         </property>
        </widget>
       </item>

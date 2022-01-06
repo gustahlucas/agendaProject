@@ -1,8 +1,0 @@
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/CMakeFiles/rebuild_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/CMakeFiles/edit_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/sources/CMakeFiles/agenda.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/CMakeFiles/edit_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/CMakeFiles/rebuild_cache.dir
-/home/gustavo/Área de Trabalho/progAvancada/agendaProject/cmake-build-debug/standalone/CMakeFiles/agendaProject.dir

@@ -1,3 +1,0 @@
-"D:\Programas\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\agendaProject.dir/objects.a
-"D:\Programas\CLion 2021.3\bin\mingw\bin\ar.exe" qc CMakeFiles\agendaProject.dir/objects.a @CMakeFiles\agendaProject.dir\objects1.rsp
-"D:\Programas\CLion 2021.3\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\agendaProject.dir/objects.a -Wl,--no-whole-archive -o agendaProject.exe -Wl,--out-implib,libagendaProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\agendaProject.dir\linklibs.rsp
