@@ -19,12 +19,15 @@ Tasks performed:
 ## Interface
 
 Tela login:
+
 ![Screenshot](agendaUI/imagens/tela%20login.png)
 
 Tela principal:
+
 ![Screenshot](agendaUI/imagens/tela%20principal.png)
 
-Tela pesquisa + edição + exclusão
+Tela pesquisa + edição + exclusão:
+
 ![Screenshot](agendaUI/imagens/tela%20pesquisa%20editao%20exclusao.png)
 
 ## License
