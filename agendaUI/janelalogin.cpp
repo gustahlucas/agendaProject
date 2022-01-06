@@ -12,7 +12,8 @@ JanelaLogin::JanelaLogin(QWidget *parent)
     bancoDeDados.setDatabaseName(banco);
     if (!bancoDeDados.open())
     {
-        ui->label->setText("Não foi possível abrir o banco de dados");
+        ui->label->setText("Não foi possivel fazer uma conexão com o banco");
+        qDebug() << banco;
     }
     else
     {
