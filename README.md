@@ -30,14 +30,40 @@ Tela pesquisa + edição + exclusão:
 
 ![Screenshot](agendaUI/imagens/tela%20pesquisa%20editao%20exclusao.png)
 
-## Install and run
+## Install and compile (Ubuntu)
 
--   [x] QT Creator 5.0.1
-
-Edit (janelalogin.cpp):
+-   Install Qt Creator
 
 ```
-bancoDeDados.setDatabaseName("<your-path>/banco_de_dados/db_agenda.db");
+sudo apt install build-essential
+```
+
+```
+sudo apt install qtcreator
+```
+
+```
+sudo apt install qt5-default
+```
+
+```
+sudo apt-get install qt5-doc qtbase5-examples qtbase5-doc-html
+```
+
+-   Create an executable file for the project
+
+```
+qmake agendaInterface.pro
+```
+
+```
+make
+```
+
+-   Test the program
+
+```
+./agendaInterface
 ```
 
 ## License
