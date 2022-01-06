@@ -30,6 +30,16 @@ Tela pesquisa + edição + exclusão:
 
 ![Screenshot](agendaUI/imagens/tela%20pesquisa%20editao%20exclusao.png)
 
+## Install and run
+
+-   [x] QT Creator 5.0.1
+
+Edit (janelalogin.cpp):
+
+```
+bancoDeDados.setDatabaseName("<your-path>/banco_de_dados/db_agenda.db");
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
