@@ -1,6 +1,6 @@
 #include "fm_principal.h"
-#include "fm_pesquisacontatos.h"
-#include "fm_novocontato.h"
+#include "fm_pesquisa.h"
+#include "fm_novo.h"
 #include "ui_fm_principal.h"
 
 fm_principal::fm_principal(QWidget *parent) : QDialog(parent),
@@ -16,12 +16,14 @@ fm_principal::~fm_principal()
 
 void fm_principal::on_btn_novocontato_clicked()
 {
-    fm_novocontato f_novocontato;
-    f_novocontato.exec();
+    fm_novo f_novo;
+    f_novo.setWindowTitle("Novo compromisso");
+    f_novo.exec();
 }
 
 void fm_principal::on_btn_pesquisarcontato_clicked()
 {
-    fm_pesquisacontatos f_pesquisacontatos;
-    f_pesquisacontatos.exec();
+    fm_pesquisa f_pesquisa;
+    f_pesquisa.setWindowTitle("Pesquisar Compromissos");
+    f_pesquisa.exec();
 }

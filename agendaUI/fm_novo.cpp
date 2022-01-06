@@ -1,19 +1,19 @@
-#include "fm_novocontato.h"
-#include "ui_fm_novocontato.h"
+#include "fm_novo.h"
+#include "ui_fm_novo.h"
 #include <QMessageBox>
 
-fm_novocontato::fm_novocontato(QWidget *parent) : QDialog(parent),
-                                                  ui(new Ui::fm_novocontato)
+fm_novo::fm_novo(QWidget *parent) : QDialog(parent),
+                                                  ui(new Ui::fm_novo)
 {
     ui->setupUi(this);
 }
 
-fm_novocontato::~fm_novocontato()
+fm_novo::~fm_novo()
 {
     delete ui;
 }
 
-void fm_novocontato::on_btn_gravar_clicked()
+void fm_novo::on_btn_gravar_clicked()
 {
     QString nome = ui->txt_nome->text();
     QString data = ui->date_compromisso->text();

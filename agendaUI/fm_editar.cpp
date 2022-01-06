@@ -1,12 +1,12 @@
-#include "fm_editarcontato.h"
-#include "ui_fm_editarcontato.h"
+#include "fm_editar.h"
+#include "ui_fm_editar.h"
 #include <QtSql>
 #include <QMessageBox>
 
 static int id;
 
-fm_editarcontato::fm_editarcontato(QWidget *parent, int id_compromisso) : QDialog(parent),
-                                                                      ui(new Ui::fm_editarcontato)
+fm_editar::fm_editar(QWidget *parent, int id_compromisso) : QDialog(parent),
+                                                                      ui(new Ui::fm_editar)
 {
     ui->setupUi(this);
     id = id_compromisso;
@@ -26,12 +26,12 @@ fm_editarcontato::fm_editarcontato(QWidget *parent, int id_compromisso) : QDialo
     }
 }
 
-fm_editarcontato::~fm_editarcontato()
+fm_editar::~fm_editar()
 {
     delete ui;
 }
 
-void fm_editarcontato::on_btn_gravar_clicked()
+void fm_editar::on_btn_gravar_clicked()
 {
     QString nome = ui->txt_nome->text();
     QString date = ui->date_compromisso->text();

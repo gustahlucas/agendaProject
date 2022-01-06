@@ -7,7 +7,9 @@ JanelaLogin::JanelaLogin(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::JanelaLogin)
 {
     ui->setupUi(this);
-    bancoDeDados.setDatabaseName("C:/Users/gusta/Documents/agendaInterface/banco_de_dados/db_agenda.db");
+    QString dir = qApp->applicationDirPath();
+    QString banco = dir + "/banco_de_dados/db_agenda.db";
+    bancoDeDados.setDatabaseName(banco);
     if (!bancoDeDados.open())
     {
         ui->label->setText("Não foi possível abrir o banco de dados");
@@ -45,6 +47,7 @@ void JanelaLogin::on_btn_login_clicked()
         {
             this->close();
             fm_principal f_principal;
+            f_principal.setWindowTitle("Home");
             f_principal.setModal(true);
             f_principal.exec();
         }

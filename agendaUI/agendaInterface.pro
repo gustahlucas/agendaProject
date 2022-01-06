@@ -9,24 +9,24 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    fm_editarcontato.cpp \
-    fm_novocontato.cpp \
-    fm_pesquisacontatos.cpp \
+    fm_editar.cpp \
+    fm_novo.cpp \
+    fm_pesquisa.cpp \
     fm_principal.cpp \
     main.cpp \
     janelalogin.cpp
 
 HEADERS += \
-    fm_editarcontato.h \
-    fm_novocontato.h \
-    fm_pesquisacontatos.h \
+    fm_editar.h \
+    fm_novo.h \
+    fm_pesquisa.h \
     fm_principal.h \
     janelalogin.h
 
 FORMS += \
-    fm_editarcontato.ui \
-    fm_novocontato.ui \
-    fm_pesquisacontatos.ui \
+    fm_editar.ui \
+    fm_novo.ui \
+    fm_pesquisa.ui \
     fm_principal.ui \
     janelalogin.ui
 

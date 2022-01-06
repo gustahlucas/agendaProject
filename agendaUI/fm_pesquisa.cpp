@@ -1,12 +1,12 @@
-#include "fm_pesquisacontatos.h"
-#include "ui_fm_pesquisacontatos.h"
-#include "fm_editarcontato.h"
+#include "fm_pesquisa.h"
+#include "ui_fm_pesquisa.h"
+#include "fm_editar.h"
 #include <QtSql>
 #include <QMessageBox>
 
-fm_pesquisacontatos::fm_pesquisacontatos(QWidget *parent) :
+fm_pesquisa::fm_pesquisa(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::fm_pesquisacontatos)
+    ui(new Ui::fm_pesquisa)
 {
     ui->setupUi(this);
     QSqlQuery query;
@@ -38,12 +38,12 @@ fm_pesquisacontatos::fm_pesquisacontatos(QWidget *parent) :
     }
 }
 
-fm_pesquisacontatos::~fm_pesquisacontatos()
+fm_pesquisa::~fm_pesquisa()
 {
     delete ui;
 }
 
-void fm_pesquisacontatos::on_btn_excluir_clicked()
+void fm_pesquisa::on_btn_excluir_clicked()
 {
     int linha=ui->tw_compromisso->currentRow();
     int id=ui->tw_compromisso->item(linha,0)->text().toInt();
@@ -57,12 +57,13 @@ void fm_pesquisacontatos::on_btn_excluir_clicked()
     }
 }
 
-void fm_pesquisacontatos::on_btn_editar_clicked()
+void fm_pesquisa::on_btn_editar_clicked()
 {
     int linha = ui->tw_compromisso->currentRow();
     int id = ui->tw_compromisso->item(linha,0)->text().toInt();
-    fm_editarcontato f_editarcontato(this, id);
-    f_editarcontato.exec();
+    fm_editar f_editar(this, id);
+    f_editar.setWindowTitle("Editar compromisso");
+    f_editar.exec();
     QSqlQuery query;
     query.prepare("select * from tb_compromisso where id_compromisso="+QString::number(id));
     if(query.exec()){

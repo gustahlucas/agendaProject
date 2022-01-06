@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>fm_editarcontato</class>
- <widget class="QDialog" name="fm_editarcontato">
+ <class>fm_editar</class>
+ <widget class="QDialog" name="fm_editar">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -19,7 +19,7 @@
      <x>20</x>
      <y>20</y>
      <width>361</width>
-     <height>153</height>
+     <height>157</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
